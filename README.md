@@ -1,2 +1,2 @@
 # bb-sg
-Big Book Study Group weekly content website
+Big Book Study Group Website

@@ -1,7 +1,7 @@
 # 4TH MEETING  MORE ABOUT ALCOHOLISM
 
 [Back to schedule](/schedule.html)  
-[Next meeting →](/meetings/step_guide_05.html)[Glossary →](/meetings/step_guide_glossary.html)
+[Next meeting →](/meetings/05)[Glossary →](/meetings/glossary)
 
 ### ON YOUR OWN
 

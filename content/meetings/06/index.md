@@ -1,7 +1,10 @@
 # 6TH MEETING  HOW IT WORKS
 
 [Back to schedule](/schedule.html)  
-[Next meeting →](/meetings/step_guide_07.html)[Glossary →](/meetings/step_guide_glossary.html)
+
+[Next meeting →](/meetings/07)
+
+[Glossary →](/meetings/glossary)
 
 ### ON YOUR OWN
 

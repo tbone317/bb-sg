@@ -1,7 +1,10 @@
 # 7TH MEETING  STEP 4, INSTRUCTIONS 1&2
 
 [Back to schedule](/schedule.html)  
-[Next meeting →](/meetings/08)[Glossary →](/meetings/glossary)
+
+[Next meeting →](/meetings/08)
+
+[Glossary →](/meetings/glossary)
 
 ### ON YOUR OWN
 

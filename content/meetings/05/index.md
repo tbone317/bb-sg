@@ -1,7 +1,8 @@
 # 5TH MEETING  WE AGNOSTICS
 
-[Back to schedule](/schedule.html)  
-[Next meeting →](/meetings/step_guide_06.html)[Glossary →](/meetings/step_guide_glossary.html)
+[Back to schedule](/schedule.html)
+
+[Next meeting →](/meetings/06)[Glossary →](/meetings/glossary)
 
 ### ON YOUR OWN
 

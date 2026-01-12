@@ -1,7 +1,7 @@
 # 19TH MEETING  STEP 12
 
 [Back to schedule](/schedule.html)  
-[Next meeting →](/meetings/step_guide_20.html)[Glossary →](/meetings/step_guide_glossary.html)
+[Next meeting →](/meetings/20)[Glossary →](/meetings/glossary)
 
 ### ON YOUR OWN
 

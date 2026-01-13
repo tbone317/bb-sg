@@ -2,7 +2,9 @@
 
 [Back to schedule](/schedule.html)
 
-[Next meeting →](/meetings/06)[Glossary →](/meetings/glossary)
+[Next meeting →](/meetings/06)
+
+[Glossary →](/meetings/glossary)
 
 ### ON YOUR OWN
 

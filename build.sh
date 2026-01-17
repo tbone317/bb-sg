@@ -1,1 +1,1 @@
-python3 src/main.py "/bb-sg/"
+python3 src/main_gencontent.py "/bb-sg/"

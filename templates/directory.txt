@@ -1,0 +1,14 @@
+Hi everyone,
+
+Below is the current member directory and contact details for the Big Book Study Group.
+Please reply with corrections if anything is out of date.
+
+Study Group Members ({member_count}):
+
+{members}
+
+CC list:
+{cc_list}
+
+Best regards,
+Big Book Study Group Secretary

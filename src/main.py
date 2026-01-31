@@ -4,6 +4,7 @@ import sys
 
 from copystatic import copy_files_recursive
 from gencontent import generate_pages_recursive
+import send_recap
 
 def generate_static_site():
     print("Running task one...")
@@ -25,9 +26,23 @@ def generate_static_site():
     generate_pages_recursive(dir_path_content, template_path, dir_path_public, default_basepath)
     
 
-def task_two():
+def recap_email():
     print("Running task two...")
     # put your script logic here
+    try:
+        emailer = send_recap.StudyGroupEmailer()
+        emailer.run()
+    except ValueError as e:
+        print(f"\n✗ Configuration Error: {e}")
+        print("\nMake sure you have a .env file with:")
+        print("  GMAIL_ADDRESS=your.email@gmail.com")
+        print("  GMAIL_APP_PASSWORD=your_16_char_app_password")
+    except FileNotFoundError:
+        print("\nPlease edit recipients.json with your group members, then run again.")
+    except KeyboardInterrupt:
+        print("\n\nScript cancelled by user.")
+    except Exception as e:
+        print(f"\n✗ Unexpected error: {e}")
 
 def main():
     while True:
@@ -43,7 +58,7 @@ def main():
         if choice == "1":
             generate_static_site()
         elif choice == "2":
-            task_two()
+            recap_email()
         elif choice == "q":
             print("Goodbye!")
             sys.exit(0)

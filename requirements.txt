@@ -1,0 +1,15 @@
+annotated-types==0.7.0
+certifi==2025.10.5
+# Editable install with no version control (guess-game==0.1.0)
+-e /Users/travisdunbar/Documents/guess_game
+markdown-it-py==4.0.0
+mdurl==0.1.2
+mysql-connector-python==9.4.0
+pydantic==2.12.4
+pydantic-settings==2.12.0
+pydantic_core==2.41.5
+Pygments==2.19.2
+python-dotenv==1.2.1
+rich==14.2.0
+typing-inspection==0.4.2
+typing_extensions==4.15.0

@@ -1,0 +1,60 @@
+{
+    "study_group_members": [
+        {
+            "name": "Travis Dunbar",
+            "email": "travis.j.dunbar@gmail.com",
+            "active": true,
+            "phone": "651-269-5198",
+            "soberDate": "2022-06-24"
+        },
+        {
+            "name": "Marc A. Edelson",
+            "email": "medelson1@gmail.com",
+            "active": true,
+            "phone": "612-986-0735",
+            "soberDate": "2018-03-14"
+        },
+        {
+            "name": "Douglas Hall",
+            "email": "douglasfhall@gmail.com",
+            "active": true,
+            "phone": "612-889-9470",
+            "soberDate": "1994-03-15"
+        },
+        {
+            "name": "John Biondi",
+            "email": "b@dayage.us",
+            "active": true,
+            "phone": "612-810-3505",
+            "soberDate": ""
+        },
+        {
+            "name": "Kris Shefveland",
+            "email": "kshefve@gmail.com",
+            "active": true,
+            "phone": "320-469-3303",
+            "soberDate": ""
+        },
+        {
+            "name": "Steve Cashman",
+            "email": "steven.cashman@roberthalf.com",
+            "active": true,
+            "phone": "612-816-3253",
+            "soberDate": "2025-09-20"
+        },
+        {
+            "name": "Braden Ahlberg",
+            "email": "bradenahlberg@gmail.com",
+            "active": true,
+            "phone": "763-443-3174",
+            "soberDate": ""
+        },
+        {
+            "name": "Andrew Joyal",
+            "email": "andrewsjoyal87@gmail.com",
+            "active": true,
+            "phone": "507-398-2903",
+            "soberDate": "2017-04-25"
+        }
+    ]
+}

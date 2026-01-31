@@ -107,13 +107,13 @@ def get_sender_credentials():
 
 
 def render_template(template_path: str, context: dict) -> str:
-    """Render a simple template file by replacing placeholders using str.format_map.
+    """Render a template file using Jinja2.
 
-    The caller should prepare any list or conditional sections as strings in the
-    context (e.g. 'topics' or 'members'). This avoids adding a template
-    dependency while keeping templates readable.
+    Requires Jinja2 to be installed for proper template rendering.
     """
-    # Prefer Jinja2 if available, fall back to simple format_map
+    if Environment is None:
+        raise ImportError("Jinja2 is required for template rendering. Install it with: pip install jinja2")
+    
     if not os.path.isabs(template_path):
         # Resolve relative to project root (parent of src directory)
         base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -121,32 +121,18 @@ def render_template(template_path: str, context: dict) -> str:
     else:
         path = template_path
     
-    if Environment is not None:
-        # Load templates from the templates directory under project
-        templates_dir = os.path.dirname(path)
-        tpl_name = os.path.basename(path)
-        env = Environment(
-            loader=FileSystemLoader(templates_dir),
-            autoescape=select_autoescape(enabled_extensions=('j2',))
-        )
-        try:
-            template = env.get_template(tpl_name)
-        except Exception as e:
-            raise FileNotFoundError(f"Template file not found or failed to load: {template_path} ({e})")
-        return template.render(**context)
-
-    # Fallback: simple format_map
+    # Load templates from the templates directory under project
+    templates_dir = os.path.dirname(path)
+    tpl_name = os.path.basename(path)
+    env = Environment(
+        loader=FileSystemLoader(templates_dir),
+        autoescape=select_autoescape(enabled_extensions=('j2',))
+    )
     try:
-        with open(path, "r") as f:
-            tpl = f.read()
-    except FileNotFoundError:
-        raise FileNotFoundError(f"Template file not found: {template_path} (resolved to {path})")
-
-    class SafeDict(dict):
-        def __missing__(self, key):
-            return ""
-
-    return tpl.format_map(SafeDict(context))
+        template = env.get_template(tpl_name)
+    except Exception as e:
+        raise FileNotFoundError(f"Template file not found or failed to load: {template_path} ({e})")
+    return template.render(**context)
 
 
 def send_email(sender_email, sender_password, recipients_data, subject, body, smtp_server='smtp.gmail.com', smtp_port=587):
